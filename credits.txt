@@ -5,3 +5,7 @@ Christopher Anderton - http://codepen.io/deluxive/
 Typed.js
 http://www.mattboldt.com/demos/typed-js/
 Matt Boldt - www.mattboldt.com
+
+Monitor favicon
+http://www.favicon.cc/?action=icon&file_id=400433
+hulvire - http://www.favicon.cc/?action=icon_list&user_id=57452
