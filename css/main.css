@@ -88,7 +88,7 @@ body {
   word-wrap: break-word;
 }
 
-#screen:after {
+#screen:not(.typing):after {
   content: "|";
   -webkit-animation: cursor .95s ease-in-out infinite;
   -moz-animation: cursor .95s ease-in-out infinite;
