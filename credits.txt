@@ -1,0 +1,7 @@
+WarGames Terminal:
+http://codepen.io/deluxive/pen/lxEGs?editors=1100
+Christopher Anderton - http://codepen.io/deluxive/
+
+Typed.js
+http://www.mattboldt.com/demos/typed-js/
+Matt Boldt - www.mattboldt.com
