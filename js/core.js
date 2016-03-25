@@ -12,7 +12,6 @@ window.onload = function() {
 
       distort = function() {
         setTimeout(function() {
-          console.log('hi');
           distortRandomTransmission();
           distort();
         }, Math.max(250, getRandomInt(3000)));
