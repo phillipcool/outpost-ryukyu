@@ -9,7 +9,14 @@
 
 
 body {
-  background: #131313
+  background: #131313;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
 }
 
 ::selection {
@@ -29,12 +36,11 @@ body {
 
 #content {
   position: relative;
-  /*Noise*/
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  padding: 10px 25px 40px;
   text-align: left;
+  padding: 25px
 }
 
 #terminal {
