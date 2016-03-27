@@ -6,6 +6,10 @@ Typed.js
 http://www.mattboldt.com/demos/typed-js/
 Matt Boldt - www.mattboldt.com
 
+Viewport
+http://www.appelsiini.net/projects/viewport
+Mika Tuupola
+
 Monitor favicon
 http://www.favicon.cc/?action=icon&file_id=400433
 hulvire - http://www.favicon.cc/?action=icon_list&user_id=57452

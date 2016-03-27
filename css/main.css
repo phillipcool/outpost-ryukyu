@@ -88,7 +88,7 @@ body {
   word-wrap: break-word;
 }
 
-#screen:not(.typing):after {
+#screen:not(.typing) span:last-child:after {
   content: "|";
   -webkit-animation: cursor .95s ease-in-out infinite;
   -moz-animation: cursor .95s ease-in-out infinite;
@@ -97,8 +97,14 @@ body {
   animation: cursor .95s ease-in-out infinite;
   position: relative;
   display: inline-block;
-  left: -3px;
+  width: 0;
+  left: -15px;
   transform: scaleX(5);
+}
+
+#screen span.centered {
+  display: block;
+  text-align: center;
 }
 
 
@@ -176,10 +182,22 @@ body {
 
 footer {
   position: fixed;
+  display: block;
+  height: 20px;
+  margin: 0 10px;
   bottom: 10px;
-  right: 10px;
+  right: 0px;
+  left: 0px;
   color: #053A1E;
   font: 12px monospace;
+}
+
+footer div {
+  display: inline-block;
+}
+
+footer div.twitter {
+  position: absolute;
 }
 
 footer a {
@@ -189,4 +207,9 @@ footer a {
 
 footer a:hover {
   color: #18CC6D;
+}
+
+footer .right {
+  position: absolute;
+  right: 0px;
 }
