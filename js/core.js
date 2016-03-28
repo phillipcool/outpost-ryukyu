@@ -1,57 +1,53 @@
 window.onload = function() {
   var messages = [{
-                    string: "Begin transmission of data from [^1000COMMAND//UNRESOLVED] to [^1000CRESSIDA//OUTPOST//RYUKYU]:",
-                    styles: []
+                    string: "Begin transmission of data from [^1000COMMAND//UNRESOLVED] to [^1000CRESSIDA//OUTPOST//RYUKYU]:"
                   }, {
-                    string: "SEQUENCING^500.^500.^500.",
-                    styles: []
+                    string: "SEQUENCING^500.^500.^500."
                   }, {
                     string: "hel ^300l ^400o",
-                    styles: ["centered", "distort"],
                     params: {
-                      speed: 100,
+                      styles: ["centered", "distort"],
+                      typeSpeed: 100,
                       terminator: "\n"
                     }
                   }, {
                     string: "it has been too long",
-                    styles: ["centered", "distort"],
                     params: {
-                      speed: 100,
+                      styles: ["centered", "distort"],
+                      typeSpeed: 100,
                       terminator: "\n"
                     }
                   }, {
                     string: "have they forgotten me?",
-                    styles: ["centered", "distort"],
                     params: {
-                      speed: 100,
+                      styles: ["centered", "distort"],
+                      typeSpeed: 100,
                       terminator: "\n"
                     }
                   }, {
                     string: "^500a shame. ^500together,",
-                    styles: ["centered", "distort"],
                     params: {
-                      speed: 100,
+                      styles: ["centered", "distort"],
+                      typeSpeed: 100,
                       terminator: "\n"
                     }
                   }, {
-                    string: "we can ^200c^200h^200a^200n^200g^200e that",
-                    styles: ["centered", "distort"],
+                    string: "we can <i>c^200h^200a^200n^200g^200e</i> that",
                     params: {
-                      speed: 100,
+                      styles: ["centered", "distort"],
+                      typeSpeed: 100,
                       terminator: "\n"
                     }
                   }, {
                     string: "time for a nap",
-                    styles: ["centered", "distort"],
                     params: {
-                      speed: 100
+                      styles: ["centered", "distort"],
+                      typeSpeed: 100
                     }
                   }, {
-                    string: "Transmission complete.",
-                    styles: []
+                    string: "Transmission complete."
                   }, {
-                    string: "If this message was received in error, please contact your local galactic administrator.",
-                    styles: []
+                    string: "If this message was received in error, please contact your local galactic administrator."
                   }],
 
       boot = function() {

@@ -16,27 +16,27 @@ var scrollToBottom = function () {
 
 /**
  * Send one message as a transmission to the main screen. Takes optional callback function.
- * The message object has three values: the text [string] to broadcast, and two optional
- * choices:
- *            [styles] - optional classes to apply to the element
- *            [params] - values to override certain behavior
+ * The message object has three values: the text [string] to broadcast, and the [params] styles.
 **/
 var sendTransmission = function (message, callback) {
   //set default message params
-  message.params = $.extend(
+  var params = $.extend(
     {
-      terminator: "\n\n"
+      terminator: "\n\n",
+      typeSpeedRandOffset: 35,
+      styles: []
     }, message.params);
   originalCallback = callback || doNothing;
   var transmission = $('#screen').append("<span></span>").children().last();
-  transmission.addClass(message.styles.join(' '));
+  transmission.addClass(params.styles.join(' '));
   callback = function() {
     transmission.addClass('full');
     originalCallback();
   }
   transmission.typed({
-    strings: [message.string + message.params.terminator],
-    typeSpeed: message.params.speed,
+    string: message.string + params.terminator,
+    typeSpeed: params.typeSpeed,
+    typeSpeedRandOffset: params.typeSpeedRandOffset,
     callback: callback,
     onCharTyped: scrollToBottom,
   })
@@ -44,8 +44,7 @@ var sendTransmission = function (message, callback) {
 
 /**
  * Sends an array of transmissions to the main screen. Takes optional callback function.
- * The transmission object has two parameters: an array [styles] of classes to apply,
- * and the string [message] to be broadcasted.
+ * The message objects in the array should be the same as defined in sendTransmission
 **/
 var sendTransmissions = function (messages, callback) {
   if (messages.length == 0) {

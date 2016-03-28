@@ -6,7 +6,7 @@ Typed.js
 http://www.mattboldt.com/demos/typed-js/
 Matt Boldt - www.mattboldt.com
 
-Viewport
+Viewport Selectors For jQuery
 http://www.appelsiini.net/projects/viewport
 Mika Tuupola
 
